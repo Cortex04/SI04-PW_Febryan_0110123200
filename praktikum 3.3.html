@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="praktikum 3.4.html" method="post">
+    <ul style="list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        border: 2px solid #333;">
+
+        <li style="float: left;
+        border-right:1px solid #bbb;  border-right: none;"><a style=" display: block;
+        color: white; text-align: center; padding: 14px 16px; text-decoration: none;
+        background-color: #111; background-color: #04AA6D; border: 1px solid #333;" 
+        href="#home">Home</a>
+        </li>
+
+        <li style="float: left;
+        border-right:1px solid #bbb;  border-right: none;"><a style=" display: block;
+        color: white; text-align: center; padding: 14px 16px; text-decoration: none; 
+        background-color: #111; background-color: #04AA6D; border: 1px solid #333;" 
+        href="#Generate">Generate Link</a>
+        </li>
+
+        <li style="float: left;
+        border-right:1px solid #bbb;  border-right: none;"><a style=" display: block;
+        color: white; text-align: center; padding: 14px 16px; text-decoration: none; 
+        background-color: #111; background-color: #04AA6D; border: 1px solid #333;" 
+        href="#Transaction">Transaction History</a>
+        </li>
+
+        <li style="float: left;
+        border-right:1px solid #bbb;  border-right: none;"><a style=" display: block;
+        color: white; text-align: center; padding: 14px 16px; text-decoration: none;
+        background-color: #111; background-color: #04AA6D; border: 1px solid #333;"
+        href="#Policy">Policy</a>
+        </li>
+
+        <li style="float:right ; border-right:1px solid #bbb;  border-right: none;"><a style="display: block;
+        color: white; text-align: center; padding: 14px 16px; text-decoration: none; 
+        background-color: #333;" 
+        href="#Logout">Logout</a>
+        </li>
+
+      </ul>
+
+    <div style="float: left; margin: 30px;">
+        <img src="data:image/jpeg;base64,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"
+           alt="gambar" style=" width : 250px ; height: 250px; ">
+    </div>
+
+    <div style="margin: 5px; margin-left: 25%; margin-top: 25px;">
+        <label style="padding: 12px 12px 12px 0px; display: inline-block; width: 160px;" for="title">
+            Title Here :
+        </label>
+        <input style=" width: 50%;
+        padding: 12px;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 4px;
+        resize: vertical;
+        margin-top: 1px;"
+        type="text" id="tittle" name="title">
+    </div>
+
+    <div style="align-items: center; display: flex; margin-left: 25%;">
+        <label style="padding: 12px 12px 12px 0px; display: inline-block; width: 150px;" for="Description">
+            Description :
+        </label>
+        <textarea style="width: 50%;
+        padding: 12px;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 4px;
+        resize: vertical;
+        margin-top: 1px;
+        margin-left: 14px;"
+        id="Description" name="Description" rows="4" cols="100">
+        </textarea>   
+    </div>
+
+    <div style="margin: 5px; margin-left: 25%;">
+        <label style="padding: 12px 12px 12px 0px; display: inline-block; width: 160px;" for="Account Number">
+            Account Number :
+        </label>
+        <input style=" width: 50%;
+        padding: 12px;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 4px;
+        resize: vertical;
+        margin-top: 1px;"
+        type="text" id="ANumber" name="ANumber">
+    </div>
+
+    <div style="margin: 5px; margin-left: 25%;">
+        <label style="padding: 12px 12px 12px 0px; display: inline-block; width: 160px;" for="Bank">
+            Bank :
+        </label>
+        <select style=" width: 50%;
+        padding: 12px;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 4px;
+        resize: vertical;
+        margin-top: 1px;">
+
+        <option value="BNI">BNI</option>
+        <option value="BCA">BCA</option>
+        <option value="BTN">BTN</option>
+        <option value="Mandiri">Mandiri</option>
+       </select>
+    </div>
+
+    <div style="margin: 5px; margin-left: 25%;">
+        <label style="padding: 12px 12px 12px 0px; display: inline-block; width: 160px;" for="Account Holder">
+            Account Holder :
+        </label>
+        <input style=" width: 50%;
+        padding: 12px;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 4px;
+        resize: vertical;
+        margin-top: 1px;"
+        type="text" id="AHolder" name="AHolder">
+    </div>
+
+    <div style="margin: 5px; margin-left: 25%;">
+        <label style="padding: 12px 12px 12px 0px; display: inline-block; width: 160px;" for="Transaction">
+            Transaction :
+        </label>
+            <select style=" width: 50%;
+                padding: 12px;
+                border: 1px solid rgb(0, 0, 0);
+                border-radius: 4px;
+                resize: vertical;
+                margin-top: 1px;">
+    
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+           </select>
+    </div>
+
+    <div style= "width: 40%; margin-left: 515px;">
+        *if the transaction is for 3 person, choose 3 from the drop-down list
+        <br>
+        <input type="checkbox" id="check1"> <label for="check1"> Send to mobile phone</label>
+        <br>
+        <input type="checkbox" id="check2"> <label for="check2"> Send to Email</label>
+    </div>
+
+    <div style="margin : 5px; margin-left: 25%;">
+        <label style="padding: 12px 12px 12px 0px; display: inline-block; width: 160px;" for="Send Mobile">
+            Send To Mobile Phone :
+        </label>
+        <input style=" width: 50%;
+        padding: 12px;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 4px;
+        resize: vertical;
+        margin-top: 1px;"
+        type="text" id="SMobile" name="SMobile">
+    </div>
+
+    <div style="margin : 5px; margin-left: 25%;">
+        <label style="padding: 12px 12px 12px 0px; display: inline-block; width: 160px;" for="Send Email">
+            Send To Email :
+        </label>
+        <input style=" width: 50%;
+        padding: 12px;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 4px;
+        resize: vertical;
+        margin-top: 1px;"
+        type="email" id="SEmail" name="SEmail">
+    </div>
+
+    <div style="margin : 15px; margin-left: 513px">
+        <input style=" background-color: #04AA6D;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;" type="submit" value="input">
+    </div>
+</form>
+</body>
+</html>
