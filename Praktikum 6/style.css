@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+#header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#header h1 {
+    margin: 0;
+}
+
+#header blockquote {
+    margin: 10px 0;
+    font-style: italic;
+}
+
+ul {
+    list-style-type: none;
+    background-color: #333;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    float: left;
+}
+
+ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    background-color: #111;
+}
+
+.gambar {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.gambar img {
+    margin: 0 10px;
+    height: 300px;
+}
+
+.isi {
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.gambar, .koleksi {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.gambar img, .koleksi img {
+    margin: 0 2px;
+    height: 300px;
+}
+
+.isi, #profil, #beternak, .promo {
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.isi .jawa {
+    color: #c60;
+    font-weight: bold;
+}
+
+.promo {
+    background-color: #eee;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.promo h2, .promo h3, .promo h4 {
+    margin: 10px 0;
+}
+
+.promo strong {
+    color: #c60;
+}
