@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Sivitas Akademika</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form style="margin-bottom: 50px;">
+            <label style="font-size: larger; margin-right: 62%;" for="">Cari Sivitas Akademi</label>
+            <input type="text" name="search">
+            <input type="submit" value="Search">
+        </form>
+        <form>
+            <div class="container-form">
+                <label style="margin-right: 10px;" for="name">Nama Lengkap</label>
+                <input type="text" id="name" name="name">
+            </div>
+            
+            <div class="container-form">
+                <label style="margin-right: 40px;" for="prodi">Asal Prodi</label>
+                <input type="text" id="prodi" name="prodi">
+            </div>
+            
+            <div class="container-form">
+                <label style="margin-right: 71px;" for="status">Status</label>
+                <select style=" width: 326px; padding: 12px; border: 1px solid rgb(0, 0, 0);
+                border-radius: 4px; resize: vertical; margin-top: 1px;" id="status" name="status">
+                    <option value="mahasiswa">Mahasiswa</option>
+                    <option value="dosen">Dosen</option>
+                </select>
+            </div>
+            
+            <div style="display: flex; margin-left: 400px; margin-bottom: 15px;">
+                <label style="margin-right: 10px;" for="vehicle">Jenis Kendaraan</label>
+                <input type="radio" id="mobil" name="mobil" value="mobil">
+                <label style="margin-right: 30px;" for="mobil">Motor</label>
+                <input type="radio" id="mobil" name="mobil" value="mobil">
+                <label for="mobil">Mobil</label>
+            </div>
+            
+            <div class="container-form">
+                <label style="margin-right: 68px;" for="nopol">NoPol</label>
+                <input type="text" id="nopol" name="nopol">
+            </div>
+            
+            <div class="container-form">
+                <label style="margin-right: 75px;" for="merk">Merk</label>
+                <input type="text" id="merk" name="merk">
+            </div>
+            
+            <div style="text-align: center; margin-bottom: 15px;">
+                <label style="margin-right: 91px;" for="stnk">Upload STNK</label>
+                <input type="file" id="stnk" name="stnk">
+            </div>
+           
+            <div class="button">
+                <button type="submit">Daftar</button>
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>
