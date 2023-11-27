@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+    background-color: aliceblue;
+}
+    
+.main {
+    display: flex;
+    flex: 1;
+}
+
+.main article {
+    flex: 1;
+    order: 1;
+}
+    
+.main nav, aside {
+    flex: 0 0 20vw;
+}
+
+.main nav {
+    background-color: lightgreen;
+    order: 3;
+}
+
+.main aside {
+    background-color: lightskyblue;
+    order: 2;
+}
+  
+header, footer {
+    background-color: navajowhite;
+    height: 20vh;    
+}
+    
+header, footer, article, nav, aside {
+    padding: 1em;
+}
+    
