@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function hitungJumlah() {
+            let bilangan1 = document.getElementById("a").value;
+            let bilangan2 = document.getElementById("b").value;
+
+            let jumlah = parseInt(bilangan1) + parseInt(bilangan2);
+
+            document.getElementById("hasil").value = jumlah ;
+        }
+    </script>
+</head>
+<body>
+    <h2 style="text-align: center;">Penjumlahan 2 bilangan</h2>
+    <h4>Masukkan Angka :</h4>
+    
+    <input type="number" id="a" onchange="hitungJumlah()">
+    <br>
+
+    <h4>+</h4>
+    <input type="number" id="b" onchange="hitungJumlah()">
+    <br>
+
+    <h4>=</h4>
+    <input type="text" id="hasil" readonly>
+</body>
+</html>
