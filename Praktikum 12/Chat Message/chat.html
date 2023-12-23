@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 100%;
+        }
+        #box{
+            width: 632px;
+            border: 1px solid black;
+            border-radius: 4px;
+            height: 400px;
+            padding: 8px 5px;
+            margin-bottom: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div id="box"></div>
+        <input style="width: 585px;" type="text" id="pesan" placeholder="Tulis pesan di sini..." onchange="chat()">
+        <input type="button" id="kirim" onclick="chat()" value="Kirim">
+
+    </div>
+    <script>
+        function chat() {
+            let _pesan = document.getElementById('pesan');
+            let _box = document.getElementById('box');
+            
+            let message = document.createElement('p');
+            message.textContent = _pesan.value;
+            _box.appendChild(message);
+            
+            _pesan.value = '';
+        }
+    </script>
+</body>
+</html>

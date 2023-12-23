@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validasi</title>
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+
+    <script>
+        
+    </script>
+</head>
+<body>
+  <h2>Form Validasi</h2><br>
+    <form id="myForm">
+        Nama Pelanggan : <input style="margin-left: 38px;" type="text" id="nama" name="nama"><span id="errorNama" class="error"></span>
+        <br><br>
+
+        Email : <input style="margin-left: 108px;" type="email" id="email" name="email"><span id="errorEmail" class="error"></span>
+        <br><br>
+
+        Jam Keberangkatan : <input style="margin-left: 19px; width: 165px;" type="time" id="jam" name="jam"><span id="errorJam" class="error"></span>
+        <br><br>
+
+        Tujuan Keberangkatan : <input  type="text" id="tujuan" name="tujuan"><span id="errorTujuan" class="error"></span>
+        <br><br>
+
+        Jumlah Tiket : <input style="margin-left: 63px; width: 161px;" type="number" id="tiket" name="tiket" min="1" max="10"><span id="errorTiket" class="error"></span>
+        <br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    <div id="hasil"></div>
+    <script src="validasi.js"></script>
+</body>
+</html>
+

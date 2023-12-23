@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+
+        table{
+            width: 50%;
+            border: solid black;
+            background-color: aliceblue;
+            padding: 10px;
+        }
+        
+        table td {
+            text-align: center;
+        }
+    </style>
+
+    <script>
+        function kalkulator(){
+            let input = document.getElementById("input").value;
+            let mata_uang = document.getElementById("matauang").value;
+            let hasil = input * mata_uang;
+
+            console.log(hasil);
+
+            document.getElementById("hasil").value = "Rp." + hasil;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <table>
+            <tr>
+                <td>Masukan Nilai</td>
+                <td>Mata Uang</td>
+                <td>Nilai Rupiah</td>
+            </tr>
+
+            <tr>
+                <td><input type="number" onchange="kalkulator()" id="input"></td>
+                <td>
+                    <select name="" id="matauang" onchange="kalkulator()">
+                        <option value="9915">Dollar US</option>
+                        <option value="13472">Dollar Singapore</option>
+                        <option value="874">Ringgit</option>
+                        <option value="120">Yen Japan</option>
+                        <option value="15888">Euro</option>
+                        <option value="3592">Riyal Arab Saudi</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="text" id="hasil" readonly> 
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
